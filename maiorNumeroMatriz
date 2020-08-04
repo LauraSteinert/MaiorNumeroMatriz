@@ -1,0 +1,14 @@
+/* Escreva um método que recebam uma matriz bidimensional de inteiros como parâmetro e 
+retorne o valor do maior número contido nessa matriz (esta matriz, não necessariamente, será quadrada). */
+
+static int maiorValor(int[][] m) {
+int maior=0;
+	for (int i=0;i<m.length;i++){
+		for(int j=0; j<m[i].length;j++){
+   			if (m[i][j]>maior) {
+				maior=m[i][j];
+			}
+		}
+	}
+return(maior);
+}
